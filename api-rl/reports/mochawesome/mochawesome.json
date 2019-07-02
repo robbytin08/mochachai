@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2019-07-02T07:38:55.845Z",
-    "end": "2019-07-02T07:38:58.812Z",
-    "duration": 2967,
+    "start": "2019-07-02T09:44:44.096Z",
+    "end": "2019-07-02T09:44:47.167Z",
+    "duration": 3071,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "a0d32c9c-9f6b-4c6b-baf1-8fbf17d95ab1",
+    "uuid": "253fb603-da02-4353-bf30-f35d9a2df2aa",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,9 +28,9 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "db235f8c-b5aa-4b8a-b39d-0e27aaed1ae7",
+        "uuid": "02776476-cdb1-4c48-832d-09cc90b5e078",
         "title": "Get Product Populer",
-        "fullFile": "/Users/macbookair/git/try/rllapi/mochachi/api-rl/api/test/api-list-test.js",
+        "fullFile": "/Users/macbook/mocha/mochachai/api-rl/api/test/api-list-test.js",
         "file": "/api/test/api-list-test.js",
         "beforeHooks": [],
         "afterHooks": [],
@@ -39,7 +39,7 @@
             "title": "@get As a User, I want to show Product Populer",
             "fullTitle": "Get Product Populer @get As a User, I want to show Product Populer",
             "timedOut": false,
-            "duration": 694,
+            "duration": 214,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -48,27 +48,27 @@
             "code": "const response = await page.getProductPopuler();\nassert(response.status).to.equal(200);",
             "err": {},
             "isRoot": false,
-            "uuid": "2d877091-9ce0-41ca-a02c-601908e77be2",
+            "uuid": "35b3b9d0-2dca-42e1-9fe5-b32c37f109ed",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "2d877091-9ce0-41ca-a02c-601908e77be2"
+          "35b3b9d0-2dca-42e1-9fe5-b32c37f109ed"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 694,
+        "duration": 214,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
       },
       {
-        "uuid": "eefba8bb-ee4c-4598-ad96-03a727ec4029",
+        "uuid": "1648974b-a521-4e25-bfca-18ab8f7697f2",
         "title": "Get Product Home",
-        "fullFile": "/Users/macbookair/git/try/rllapi/mochachi/api-rl/api/test/api-product-list-test.js",
+        "fullFile": "/Users/macbook/mocha/mochachai/api-rl/api/test/api-product-list-test.js",
         "file": "/api/test/api-product-list-test.js",
         "beforeHooks": [],
         "afterHooks": [],
@@ -77,7 +77,7 @@
             "title": "@get As a User, I want to show Product Home",
             "fullTitle": "Get Product Home @get As a User, I want to show Product Home",
             "timedOut": false,
-            "duration": 122,
+            "duration": 159,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -86,27 +86,27 @@
             "code": "const response = await page.getProductHome();\n assert(response.status).to.equal(200);",
             "err": {},
             "isRoot": false,
-            "uuid": "7e41756b-f92f-4890-a9a1-666804e1d5c6",
+            "uuid": "ebde48d2-e50b-4ca7-9f06-67659e7ba694",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "7e41756b-f92f-4890-a9a1-666804e1d5c6"
+          "ebde48d2-e50b-4ca7-9f06-67659e7ba694"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 122,
+        "duration": 159,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
       },
       {
-        "uuid": "acb05c6e-402c-417a-8b68-45731cd97943",
+        "uuid": "1bda8325-fb1c-4633-91aa-76df46a7d1c9",
         "title": "Register Mobile Apps",
-        "fullFile": "/Users/macbookair/git/try/rllapi/mochachi/api-rl/api/test/register-mobile-test.js",
+        "fullFile": "/Users/macbook/mocha/mochachai/api-rl/api/test/register-mobile-test.js",
         "file": "/api/test/register-mobile-test.js",
         "beforeHooks": [],
         "afterHooks": [],
@@ -115,7 +115,7 @@
             "title": "@post As a New User, I want to register for login",
             "fullTitle": "Register Mobile Apps @post As a New User, I want to register for login",
             "timedOut": false,
-            "duration": 2139,
+            "duration": 2687,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -124,19 +124,19 @@
             "code": "const response = await page.RegisterMobile(data.valid);\n assert(response.status).to.equal(200);",
             "err": {},
             "isRoot": false,
-            "uuid": "45a56516-b757-4375-b6e6-c9aa88379e23",
+            "uuid": "312c4c99-ef72-40bc-9030-f76230f04596",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "45a56516-b757-4375-b6e6-c9aa88379e23"
+          "312c4c99-ef72-40bc-9030-f76230f04596"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 2139,
+        "duration": 2687,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
