@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-07-02T06:53:29.457Z",
+    "end": "2019-07-02T06:53:31.308Z",
+    "duration": 1851,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "246b07e4-a8cc-4267-9124-f6c6f52ca9e1",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "71cbc777-744a-4828-942b-126088fb63f0",
+        "title": "Get Product Populer",
+        "fullFile": "/Users/macbookair/git/try/rllapi/api-rl/api/test/api-list-test.js",
+        "file": "/api/test/api-list-test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@get As a User, I want to show Product Populer",
+            "fullTitle": "Get Product Populer @get As a User, I want to show Product Populer",
+            "timedOut": false,
+            "duration": 287,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await page.getProductPopuler();\nassert(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "916a5a8d-ac4f-41d4-96a0-073f39aeb1f5",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "916a5a8d-ac4f-41d4-96a0-073f39aeb1f5"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 287,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 180000
+      },
+      {
+        "uuid": "821be143-2246-49a8-9114-c7b92108f819",
+        "title": "Get Product Home",
+        "fullFile": "/Users/macbookair/git/try/rllapi/api-rl/api/test/api-product-list-test.js",
+        "file": "/api/test/api-product-list-test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@get As a User, I want to show Product Home",
+            "fullTitle": "Get Product Home @get As a User, I want to show Product Home",
+            "timedOut": false,
+            "duration": 120,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await page.getProductHome();\n assert(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "853fd801-0be0-4a90-8869-bbcbc1ca676d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "853fd801-0be0-4a90-8869-bbcbc1ca676d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 120,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 180000
+      },
+      {
+        "uuid": "817c1543-9550-4210-840f-e5bf29570735",
+        "title": "Register Mobile Apps",
+        "fullFile": "/Users/macbookair/git/try/rllapi/api-rl/api/test/register-mobile-test.js",
+        "file": "/api/test/register-mobile-test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "@post As a New User, I want to register for login",
+            "fullTitle": "Register Mobile Apps @post As a New User, I want to register for login",
+            "timedOut": false,
+            "duration": 1431,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await page.RegisterMobile(data.valid);\n assert(response.status).to.equal(200);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "6af88ed0-df86-404c-8519-6b9501c6fee8",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "6af88ed0-df86-404c-8519-6b9501c6fee8"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1431,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 180000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 180000
+  },
+  "copyrightYear": 2019
+}
