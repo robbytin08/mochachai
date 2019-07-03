@@ -1,25 +1,25 @@
 {
   "stats": {
     "suites": 3,
-    "tests": 3,
+    "tests": 4,
     "passes": 3,
     "pending": 0,
-    "failures": 0,
-    "start": "2019-07-02T07:38:55.845Z",
-    "end": "2019-07-02T07:38:58.812Z",
-    "duration": 2967,
-    "testsRegistered": 3,
-    "passPercent": 100,
+    "failures": 1,
+    "start": "2019-07-03T04:50:01.453Z",
+    "end": "2019-07-03T04:50:05.642Z",
+    "duration": 4189,
+    "testsRegistered": 4,
+    "passPercent": 75,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "passPercentClass": "success",
+    "passPercentClass": "warning",
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "a0d32c9c-9f6b-4c6b-baf1-8fbf17d95ab1",
+    "uuid": "c92788fb-8970-4a82-a862-fd6f4c09d4da",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,9 +28,9 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "db235f8c-b5aa-4b8a-b39d-0e27aaed1ae7",
+        "uuid": "81834b3d-26d5-497c-8c51-ef615fc7bcb4",
         "title": "Get Product Populer",
-        "fullFile": "/Users/macbookair/git/try/rllapi/mochachi/api-rl/api/test/api-list-test.js",
+        "fullFile": "/Users/MacbookPro/git/mochachai/api-rl/api/test/api-list-test.js",
         "file": "/api/test/api-list-test.js",
         "beforeHooks": [],
         "afterHooks": [],
@@ -39,7 +39,7 @@
             "title": "@get As a User, I want to show Product Populer",
             "fullTitle": "Get Product Populer @get As a User, I want to show Product Populer",
             "timedOut": false,
-            "duration": 694,
+            "duration": 397,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -48,27 +48,27 @@
             "code": "const response = await page.getProductPopuler();\nassert(response.status).to.equal(200);",
             "err": {},
             "isRoot": false,
-            "uuid": "2d877091-9ce0-41ca-a02c-601908e77be2",
+            "uuid": "121b65b9-698e-48c6-923e-4a0b10a472de",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "2d877091-9ce0-41ca-a02c-601908e77be2"
+          "121b65b9-698e-48c6-923e-4a0b10a472de"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 694,
+        "duration": 397,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
       },
       {
-        "uuid": "eefba8bb-ee4c-4598-ad96-03a727ec4029",
+        "uuid": "f442e6ac-6f93-4006-9206-f4c0f9c94da6",
         "title": "Get Product Home",
-        "fullFile": "/Users/macbookair/git/try/rllapi/mochachi/api-rl/api/test/api-product-list-test.js",
+        "fullFile": "/Users/MacbookPro/git/mochachai/api-rl/api/test/api-product-list-test.js",
         "file": "/api/test/api-product-list-test.js",
         "beforeHooks": [],
         "afterHooks": [],
@@ -77,7 +77,7 @@
             "title": "@get As a User, I want to show Product Home",
             "fullTitle": "Get Product Home @get As a User, I want to show Product Home",
             "timedOut": false,
-            "duration": 122,
+            "duration": 229,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -86,27 +86,27 @@
             "code": "const response = await page.getProductHome();\n assert(response.status).to.equal(200);",
             "err": {},
             "isRoot": false,
-            "uuid": "7e41756b-f92f-4890-a9a1-666804e1d5c6",
+            "uuid": "be223476-3221-44e7-b363-e5329dfbf35a",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "7e41756b-f92f-4890-a9a1-666804e1d5c6"
+          "be223476-3221-44e7-b363-e5329dfbf35a"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 122,
+        "duration": 229,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
       },
       {
-        "uuid": "acb05c6e-402c-417a-8b68-45731cd97943",
+        "uuid": "d2eb2031-9dbd-48db-83ba-d29394c5afdf",
         "title": "Register Mobile Apps",
-        "fullFile": "/Users/macbookair/git/try/rllapi/mochachi/api-rl/api/test/register-mobile-test.js",
+        "fullFile": "/Users/MacbookPro/git/mochachai/api-rl/api/test/register-mobile-test.js",
         "file": "/api/test/register-mobile-test.js",
         "beforeHooks": [],
         "afterHooks": [],
@@ -115,28 +115,50 @@
             "title": "@post As a New User, I want to register for login",
             "fullTitle": "Register Mobile Apps @post As a New User, I want to register for login",
             "timedOut": false,
-            "duration": 2139,
+            "duration": 3301,
             "state": "passed",
             "speed": "slow",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "const response = await page.RegisterMobile(data.valid);\n assert(response.status).to.equal(200);",
+            "code": "const response = await page.RegisterMobile(data.valid);\n//  assert(response.status).to.equal(200);\n assert(response.status).to.equal(400);",
             "err": {},
             "isRoot": false,
-            "uuid": "45a56516-b757-4375-b6e6-c9aa88379e23",
+            "uuid": "da27e7b4-ae83-4cb2-a1ce-bb19b1769e91",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "post User registration with empty email",
+            "fullTitle": "Register Mobile Apps post User registration with empty email",
+            "timedOut": false,
+            "duration": 231,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "const response = await page.RegisterMobile(data.invalid);\nassert(response.status).to.equal(200);",
+            "err": {
+              "message": "AssertionError: expected 400 to equal 200",
+              "estack": "AssertionError: expected 400 to equal 200\n    at Context.it (api/test/register-mobile-test.js:25:31)\n    at processTicksAndRejections (internal/process/next_tick.js:81:5)",
+              "diff": "- 400\n+ 200\n"
+            },
+            "isRoot": false,
+            "uuid": "014bfe47-6ec1-415f-a6b3-371a28bf003e",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "45a56516-b757-4375-b6e6-c9aa88379e23"
+          "da27e7b4-ae83-4cb2-a1ce-bb19b1769e91"
         ],
-        "failures": [],
+        "failures": [
+          "014bfe47-6ec1-415f-a6b3-371a28bf003e"
+        ],
         "pending": [],
         "skipped": [],
-        "duration": 2139,
+        "duration": 3532,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
