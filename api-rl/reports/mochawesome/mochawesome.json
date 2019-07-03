@@ -1,25 +1,25 @@
 {
   "stats": {
     "suites": 3,
-    "tests": 4,
-    "passes": 3,
+    "tests": 5,
+    "passes": 5,
     "pending": 0,
-    "failures": 1,
-    "start": "2019-07-03T04:50:01.453Z",
-    "end": "2019-07-03T04:50:05.642Z",
-    "duration": 4189,
-    "testsRegistered": 4,
-    "passPercent": 75,
+    "failures": 0,
+    "start": "2019-07-03T09:04:34.276Z",
+    "end": "2019-07-03T09:04:49.045Z",
+    "duration": 14769,
+    "testsRegistered": 5,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "passPercentClass": "warning",
+    "passPercentClass": "success",
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "c92788fb-8970-4a82-a862-fd6f4c09d4da",
+    "uuid": "81a9f98f-9037-46fc-9b0c-036965fb06b2",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "81834b3d-26d5-497c-8c51-ef615fc7bcb4",
+        "uuid": "38d6e748-9fe9-4923-bc05-5e39c4541207",
         "title": "Get Product Populer",
         "fullFile": "/Users/MacbookPro/git/mochachai/api-rl/api/test/api-list-test.js",
         "file": "/api/test/api-list-test.js",
@@ -39,7 +39,7 @@
             "title": "@get As a User, I want to show Product Populer",
             "fullTitle": "Get Product Populer @get As a User, I want to show Product Populer",
             "timedOut": false,
-            "duration": 397,
+            "duration": 631,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -48,25 +48,25 @@
             "code": "const response = await page.getProductPopuler();\nassert(response.status).to.equal(200);",
             "err": {},
             "isRoot": false,
-            "uuid": "121b65b9-698e-48c6-923e-4a0b10a472de",
+            "uuid": "ad1e8cc2-1b3e-4b32-8822-c77d69aeb722",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "121b65b9-698e-48c6-923e-4a0b10a472de"
+          "ad1e8cc2-1b3e-4b32-8822-c77d69aeb722"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 397,
+        "duration": 631,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
       },
       {
-        "uuid": "f442e6ac-6f93-4006-9206-f4c0f9c94da6",
+        "uuid": "6e50a3d9-9a04-414d-84bc-98ff05f2d2ad",
         "title": "Get Product Home",
         "fullFile": "/Users/MacbookPro/git/mochachai/api-rl/api/test/api-product-list-test.js",
         "file": "/api/test/api-product-list-test.js",
@@ -77,7 +77,7 @@
             "title": "@get As a User, I want to show Product Home",
             "fullTitle": "Get Product Home @get As a User, I want to show Product Home",
             "timedOut": false,
-            "duration": 229,
+            "duration": 1138,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -86,25 +86,25 @@
             "code": "const response = await page.getProductHome();\n assert(response.status).to.equal(200);",
             "err": {},
             "isRoot": false,
-            "uuid": "be223476-3221-44e7-b363-e5329dfbf35a",
+            "uuid": "086e5078-1b4e-46ca-ba7a-b9188879e554",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "be223476-3221-44e7-b363-e5329dfbf35a"
+          "086e5078-1b4e-46ca-ba7a-b9188879e554"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 229,
+        "duration": 1138,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
       },
       {
-        "uuid": "d2eb2031-9dbd-48db-83ba-d29394c5afdf",
+        "uuid": "1fd014a9-f041-48cc-95d9-7617ca85bbb2",
         "title": "Register Mobile Apps",
         "fullFile": "/Users/MacbookPro/git/mochachai/api-rl/api/test/register-mobile-test.js",
         "file": "/api/test/register-mobile-test.js",
@@ -115,7 +115,7 @@
             "title": "@post As a New User, I want to register for login",
             "fullTitle": "Register Mobile Apps @post As a New User, I want to register for login",
             "timedOut": false,
-            "duration": 3301,
+            "duration": 12106,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -124,41 +124,55 @@
             "code": "const response = await page.RegisterMobile(data.valid);\n//  assert(response.status).to.equal(200);\n assert(response.status).to.equal(400);",
             "err": {},
             "isRoot": false,
-            "uuid": "da27e7b4-ae83-4cb2-a1ce-bb19b1769e91",
+            "uuid": "d0a19339-3c2b-4f02-9c46-1cf76fc87126",
             "isHook": false,
             "skipped": false
           },
           {
-            "title": "post User registration with empty email",
-            "fullTitle": "Register Mobile Apps post User registration with empty email",
+            "title": "@post User registration with same email",
+            "fullTitle": "Register Mobile Apps @post User registration with same email",
             "timedOut": false,
-            "duration": 231,
-            "state": "failed",
-            "pass": false,
-            "fail": true,
+            "duration": 406,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
             "pending": false,
-            "code": "const response = await page.RegisterMobile(data.invalid);\nassert(response.status).to.equal(200);",
-            "err": {
-              "message": "AssertionError: expected 400 to equal 200",
-              "estack": "AssertionError: expected 400 to equal 200\n    at Context.it (api/test/register-mobile-test.js:25:31)\n    at processTicksAndRejections (internal/process/next_tick.js:81:5)",
-              "diff": "- 400\n+ 200\n"
-            },
+            "code": "const response = await page.RegisterMobile(data.sameemail);\nassert(response.status).to.equal(400);\nassert(response.body.message).to.equal('Please confirm email');",
+            "err": {},
             "isRoot": false,
-            "uuid": "014bfe47-6ec1-415f-a6b3-371a28bf003e",
+            "uuid": "6d0dce80-230a-4f4d-abf6-6097dfb10587",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "@post User registration with invalid email format",
+            "fullTitle": "Register Mobile Apps @post User registration with invalid email format",
+            "timedOut": false,
+            "duration": 463,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const response = await page.RegisterMobile(data.wrongformatemail)\nassert(response.status).to.equal(400);\nassert(response.body.message).to.equal('Failed to register, please contact our customer service')",
+            "err": {},
+            "isRoot": false,
+            "uuid": "39dc118e-2e64-4afc-9251-7702e08fd888",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "da27e7b4-ae83-4cb2-a1ce-bb19b1769e91"
+          "d0a19339-3c2b-4f02-9c46-1cf76fc87126",
+          "6d0dce80-230a-4f4d-abf6-6097dfb10587",
+          "39dc118e-2e64-4afc-9251-7702e08fd888"
         ],
-        "failures": [
-          "014bfe47-6ec1-415f-a6b3-371a28bf003e"
-        ],
+        "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 3532,
+        "duration": 12975,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000
