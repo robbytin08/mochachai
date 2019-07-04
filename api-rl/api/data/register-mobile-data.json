@@ -1,20 +1,14 @@
 {
     "valid" : {
-     "email" : "mocha09@chi.com",
+     "email" : "mocha11@chi.com",
      "password" : "12345678",
      "name" : "mochachi",
      "subscribe_news" : 1
     },
-    "sameemail" : {
-        "email" : "mocha09@chi.com",
+    "invalid" : {
+        "email" : "mocha06@chi.com",
         "password" : "12345678",
         "name" : "mochachi",
         "subscribe_news" : 1
-    },
-    "wrongformatemail" : {
-        "email" : "mocha09",
-        "password" : "12345678",
-        "name" : "mochachi",
-        "subscribe_news" : 1
-    }
+       }
    }
