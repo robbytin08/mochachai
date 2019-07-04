@@ -22,14 +22,14 @@ describe(`Login in Android`, () => {
 
 it (`@post ${testCase.negative.LoginWithWrongEmail}`, async() => {
     const response = await page.LoginMobile(data.EmailWrong);
-    assert(response.status).to.equal(403, response.body.message);
-    // assert(response.body.label).to.equal('login_error');
-    assert(response.body.message).to.equal('Invalid Username and Password');
+    assert(response.status).to.equal(403, response.body.errors);
+    assert(response.body.errors.label).to.equal('login_error');
+    assert(response.body.errors.message).to.equal('Invalid Username and Password');
     }),
 
 it (`@post ${testCase.negative.PassEmpty}`, async() => {
     const response = await page.LoginMobile(data.PassRequired);
-    assert(response.status).to.equal(400, response.body.message);
+    assert(response.status).to.equal(400, response.body.errors);
     assert(response.body.result).to.equal(null);
     assert(response.body.message).to.equal('Password is required');
 })
