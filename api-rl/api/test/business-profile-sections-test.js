@@ -23,14 +23,13 @@ const expiredToken = "eEW521bc7995a25c09407bd6ae901ec8b3498cbb787522a5df8217960a
     assert(response.status).to.equal(200);
     assert(response.body.sections != null);
     assert(response.body.sections).to.be.an('array');
-    assert(response.body.sections!= null);
+    assert(response.body.sections[0].questions).to.be.an('array');
+    assert(response.body.sections[0].questions != null);
    })
 
  it(`@get ${testCase.negative.WithoutAccessToken}`, async() => {
    const response = await page.getBusinessProfile(apiKey, "");
-   assert(response.status).to.equal(401);
-    assert(response.body.sections[0].name_eng).to.equal('Document');
-   
+   assert(response.status).to.equal(401);   
    })
 
  it(`@get ${testCase.negative.ExpiredAccessToken}`, async() => {
