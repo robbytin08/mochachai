@@ -1,9 +1,6 @@
-Explore Testing API using framework Mocha Chai
+##Explore Testing API using framework Mocha Chai##
 
-git clone https://github.com/robbytin08/mochachai.git
-
-cd api_rl
-
-mkdir reports
-
-npm install
+1. git clone https://github.com/robbytin08/mochachai.git
+2. cd api_rl
+3. npm install
+4. mkdir reports
