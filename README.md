@@ -1,4 +1,4 @@
-##Explore Testing API using framework Mocha Chai
+Explore Testing API using framework Mocha Chai
 
 git clone https://github.com/robbytin08/mochachai.git
 
