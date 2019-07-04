@@ -10,5 +10,11 @@
         "password" : "12345678",
         "name" : "mochachi",
         "subscribe_news" : 1
+       },
+    "NoInputName" : {
+        "email" : "budi43@yahoo.com",
+        "password" : "12345678",
+        "name" : "",
+        "subscribe_news" : 1
        }
    }

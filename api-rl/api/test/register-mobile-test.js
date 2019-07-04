@@ -9,6 +9,7 @@ const testCase = {
  },
   "negative" : {
      "RegisterFailed" : "User register with same email",
+     "NotInputName" : "User register not input Name"
   }
 }
 
@@ -16,14 +17,19 @@ describe(`Register Mobile Apps`, () => {
 
 it(`@post ${testCase.positive.RegisNewMember}`, async() => {
    const response = await page.RegisterMobile(data.valid);
-    assert(response.status).to.equal(200, response.body.message);
+    assert(response.status).to.equal(400, response.body.message);
    }),
 
 it(`@post ${testCase.negative.RegisterFailed}`, async() => {
    const response= await page.RegisterMobile(data.invalid);
    assert(response.status).to.equal(400, response.body.message);
-   // assert(response.body.Response).to.equal('False');
    assert(response.body.message).to.equal('Please confirm email');
-   }) 
+   }),
+
+it(`@post ${testCase.negative.NotInputName}`, async() => {
+   const response= await page.RegisterMobile(data.NoInputName);
+   assert(response.status).to.equal(400, response.body.message);
+   assert(response.body.message).to.equal('Failed to register, please contact our customer service');
+   })
 
 }) 
