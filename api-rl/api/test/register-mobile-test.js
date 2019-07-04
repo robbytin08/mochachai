@@ -24,7 +24,7 @@ describe(`Register Mobile Apps`, () => {
    }),
 
 it (`@post ${testCase.negative1.RegWithSameEmail}`, async() => {
-   const response = await page.RegisterMobile(data.sameemail);
+   const response = await page.RegisterMobile(data.invalid);
    assert(response.status).to.equal(400);
    assert(response.body.message).to.equal('Please confirm email');
    }),

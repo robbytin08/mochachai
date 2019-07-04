@@ -8,9 +8,7 @@ const testCase = {
     "LoginSuccess" : "User login with correct data",
  },
  "negative" : {
-     "LoginWithWrongEmail" : "User login with wrong email"
- },
- "negative2" : {
+     "LoginWithWrongEmail" : "User login with wrong email",
      "PassEmpty" : "User trying login with empty password"
  }
 }
@@ -24,14 +22,14 @@ describe(`Login in Android`, () => {
 
 it (`@post ${testCase.negative.LoginWithWrongEmail}`, async() => {
     const response = await page.LoginMobile(data.EmailWrong);
-    assert(response.status).to.equal(403, response.body.Error);
+    assert(response.status).to.equal(403, response.body.message);
     // assert(response.body.label).to.equal('login_error');
     assert(response.body.message).to.equal('Invalid Username and Password');
     }),
 
-it (`@post ${testCase.negative2.PassEmpty}`, async() => {
+it (`@post ${testCase.negative.PassEmpty}`, async() => {
     const response = await page.LoginMobile(data.PassRequired);
-    assert(response.status).to.equal(400), response.body.Error;
+    assert(response.status).to.equal(400, response.body.message);
     assert(response.body.result).to.equal(null);
     assert(response.body.message).to.equal('Password is required');
 })

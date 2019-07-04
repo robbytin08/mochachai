@@ -8,11 +8,15 @@
 
     "PassRequired" : {
         "email" : "ralali.tester0@gmail.com",
-        "password" : ""
+        "password" : "",
+        "instance_device_id": "20864129ec06e36c",
+        "fcm_token": "d_evpxem1tM:APA91bHI-VLtLoL8-BCW8yD_tQyq1TPJ8gOThQyWU1LK6SncOEK7XMKwpmp-FJsdx_7kHt9qQYNz5WOxfs6KVdonLplKCKH8LNEBIeXOVshmhTQAmEHIYYcNH2g5xVlADGw7FXwuJnJb"
        },
 
     "EmailWrong" : {
         "email" : "ralali.tester0@gmail.com",
-        "password" : "12345678"
+        "password" : "12345678",
+        "instance_device_id": "20864129ec06e36c",
+        "fcm_token": "d_evpxem1tM:APA91bHI-VLtLoL8-BCW8yD_tQyq1TPJ8gOThQyWU1LK6SncOEK7XMKwpmp-FJsdx_7kHt9qQYNz5WOxfs6KVdonLplKCKH8LNEBIeXOVshmhTQAmEHIYYcNH2g5xVlADGw7FXwuJnJb"
        }
    }
